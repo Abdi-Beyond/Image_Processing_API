@@ -5,7 +5,7 @@ const app = express()
 const port = 50113
 
 app.use("/api", routes)
-
+app.use("/",routes)
 app.listen(port, ()=>{
   console.log("connecting to port .... %s", port)
   }
