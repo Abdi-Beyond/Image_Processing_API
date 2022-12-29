@@ -7,9 +7,10 @@
     "jasmine": "jasmine",
     "start": "nodemon src/index.ts",
     "build": "npx tsc",
-    "lint": "eslint . --ext .ts",
+    "lint": "eslint ./src/**/*.ts",
     "prettier": "prettier --config .prettierrc ./src/**/*.ts --write",
-    "test": "npm run build && npm run jasmine"
+    "test": "npm run build && npm run jasmine",
+    "lint_fixer" : "eslint ./src/**/*.ts --fix"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,11 @@
     "@types/node": "^18.11.18",
     "@types/sharp": "^0.31.0",
     "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
     "eslint": "^8.8.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.31.11",
     "nodemon": "^2.0.20",
     "prettier": "^2.5.1",
     "ts-node": "^10.9.1",
