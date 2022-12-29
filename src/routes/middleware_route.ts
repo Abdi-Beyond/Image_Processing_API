@@ -4,7 +4,7 @@ import { resolve } from 'path'
 var routes = express.Router()
 routes.use("/image", image)
 
-routes.get('/', (req, res)=>{
+routes.get('/', (req: express.Request, res: express.Response): void=>{
   res.sendFile(resolve('src') + "/" + 'index.html')
 })
   export default routes

@@ -8,7 +8,7 @@ var image = express.Router()
 var dir = './images/thumb';
 
 
-image.get("/", (req, res) =>{
+image.get("/", (req: express.Request, res: express.Response): void =>{
    var {width, height } = req.query;
     var name= req.query.img
     var thumbfile = './images/thumb/'+name+"_"+width+"X"+height+".jpg";
