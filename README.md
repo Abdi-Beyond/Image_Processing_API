@@ -4,7 +4,8 @@ Udacity full stuck first project.
 ## **Test**
  `npm run test`
  `npm run lint`
-## **start**
+ `npm run lint_fixer`
+ ## **start**
  `npm run start`
 
 ## **build**
